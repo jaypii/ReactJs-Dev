@@ -32,11 +32,11 @@ function App() {
 
    const RepositoryList = repos.map(({ id, name, url }) => (
       <div className="list-group" key={id}>
-         <a className="list-group-item list-group-item-action" href={url}>{name}</a>
+         <a className="list-group-item list-group-item-action mt-1" href={url} target='blank'>{name}</a>
       </div>
    ));
 
-   return <div className="card mt-2">{RepositoryList}</div>;
+   return <div className="card mt-2 p-2">{RepositoryList}</div>;
 }
 
 const rootElement = document.getElementById("root");
