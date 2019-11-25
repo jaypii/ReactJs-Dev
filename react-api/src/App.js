@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 //import Contacts from './components/contacts';
 import axios from 'axios';
 
+import Button from './components/Button';
+
 class App extends Component {
 
   constructor(props) {
@@ -9,17 +11,6 @@ class App extends Component {
     this.state = {
       imageURL: '',
     }
-  }
-
-  render () {
-    const { imageURL } = this.state;
-    return (
-      <div className="card mt-3">
-        <div className="card-body">
-          <img src = {imageURL} width="50%"/>
-        </div>
-      </div>
-    );
   }
 
   componentDidMount() {
@@ -31,6 +22,31 @@ class App extends Component {
     .catch(error => {
       console.log(error);
     });
+  }
+  
+  reloadHandler = () => {
+    window.location.reload();
+  }
+
+  render () {
+    const { imageURL } = this.state;
+
+    return (
+      <div>
+        <div className="card p-2 mt-2 bg-light">
+          <h1 className="display-3">Hello, Dog!</h1>
+          <div className="card-body">
+            <p className="lead">This is a REST Service, a simple component for randomly show dog images.</p>
+            <Button />
+          </div>
+        </div>
+        <div className="card mt-3">
+          <div className="card-body">
+            <img src = {imageURL} width="400" alt="Dog"/>
+          </div>
+        </div>
+      </div>
+    );
   }
 }
 

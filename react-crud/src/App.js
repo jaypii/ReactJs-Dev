@@ -15,14 +15,11 @@ class App extends Component {
             <Link to={'/'} className="navbar-brand">React CRUD Example</Link>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav mr-auto">
-              <li className="nav-item">
+                <li className="nav-item">
                   <Link to={'/'} className="nav-link">Home</Link>
                 </li>
                 <li className="nav-item">
                   <Link to={'/create'} className="nav-link">Create</Link>
-                </li>
-                <li className="nav-item">
-                  <Link to={'/index'} className="nav-link">Index</Link>
                 </li>
               </ul>
             </div>
@@ -31,7 +28,7 @@ class App extends Component {
           <Switch>
               <Route exact path='/create' component={ Create } />
               <Route path='/edit/:id' component={ Edit } />
-              <Route path='/index' component={ Index } />
+              <Route path='/' component={ Index } />
           </Switch>
         </div>
       </Router>

@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+
+import Clock from './clock';
 
 const Home = () => (
   <div>
@@ -16,9 +18,9 @@ const Home = () => (
     <div class="row mt-3">
       <div class="col">
         <div class="card">
-          <div class="card-header">Component: Clock</div>
+          <div class="card-header">Component: Running Clock</div>
           <div class="card-body">
-            Empty card
+            <Clock />
           </div>
         </div>
       </div>
@@ -43,6 +45,7 @@ const Home = () => (
       <div class="col">
         <div class="card">
           <div class="card-header"> Component 1</div>
+            &nbsp;
           </div>
         </div>
       <div class="col">

@@ -25,11 +25,8 @@ class Clock extends React.Component {
 
     render() {
         return (
-            <div class="card mt-3 ">
-                <h5 class="card-header bg-info text-white">Clock Component</h5>
-                <div class="card-body">
-                    <h3>{this.state.date.toLocaleTimeString()}</h3>
-                </div>
+            <div>
+                <h3>{this.state.date.toLocaleTimeString()}</h3>
             </div> 
         );
     }

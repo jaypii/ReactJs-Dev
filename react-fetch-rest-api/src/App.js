@@ -12,75 +12,6 @@ class App extends Component {
     todos: []
   }
 
-  render() {
-    return (
-      // Your JSX code goes here.
-      <div className="container">
-        
-        <div className="col-xs-12">
-          <div className="card mt-1 p-2">
-            <EssayForm />
-          </div>
-        </div>
-
-        <div className="col-xs-12">
-          <div className="card mt-1 p-2">
-            <FlavorForm />
-          </div>
-        </div>
-
-        <div className="col-xs-12">
-          <div className="card mt-1 p-2">
-            <NameForm />
-          </div>
-        </div>
-
-        <div className="col-xs-12">
-          <div className="card mt-1 p-2">
-            <Calculator />
-          </div>
-        </div>
-        {/*
-        <div className="col-xs-12">
-          <br/>
-          <h1>My Todos</h1>
-          {this.state.todos.map((todo) => (
-          <div className="card mt-1 bg-light">
-            <div className="card-body">
-              <h5 className="card-title">{todo.title}</h5>
-              <h6 className="card-subtitle mb-2 text-muted">
-                { todo.completed &&
-                <span>
-                Completed
-                </span>
-                }
-                { !todo.completed &&
-                <span>
-                Pending
-                </span>
-                }              
-              </h6>
-            </div>
-          </div>
-          ))}
-        </div>
-        */}
-
-        <div className="col-xs-12">
-          <div className="card mt-1 p-2">
-            <SignUpDialog />
-          </div>
-        </div>
-
-        <div className="col-xs-12">
-          <div className="card mt-1 p-2">
-            <Reservation />
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   componentDidMount() {
     fetch('http://jsonplaceholder.typicode.com/todos')
     .then(res => res.json())
@@ -89,6 +20,79 @@ class App extends Component {
       console.log(this.state.todos)
     })
     .catch(console.log)
+  }
+
+  render() {
+    return (
+      // Your JSX code goes here.
+      <div className="container">
+        <h2>Using simple components</h2>
+        <div className="row">
+          <div className="col">
+            <div className="card mt-1 p-2">
+              <EssayForm />
+            </div>
+          </div>
+          <div className="col">
+            <div className="card mt-1 p-2">
+              <FlavorForm />
+            </div>
+          </div>
+          <div className="col">
+            <div className="card mt-1 p-2">
+              <NameForm />
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col">
+            <div className="card mt-1 p-2">
+              <Calculator />
+            </div>
+          </div>
+          <div className="col">
+            <div className="card mt-1 p-2">
+              <SignUpDialog />
+            </div>
+          </div>
+        </div>
+        {/*}
+        <div className="row">
+          <div className="col">
+            <br/>
+            <h1>My Todos</h1>
+            {this.state.todos.map((todo) => (
+            <div className="card mt-1 bg-light">
+              <div className="card-body">
+                <h5 className="card-title">{todo.title}</h5>
+                <h6 className="card-subtitle mb-2 text-muted">
+                  { todo.completed &&
+                  <span>
+                    Completed
+                  </span>
+                  }
+                  { !todo.completed &&
+                    <span>
+                      Pending
+                    </span>
+                  }              
+                </h6>
+              </div>
+            </div>
+            ))}
+          </div>
+        </div>
+        */}
+        <div className="row">
+
+          <div className="col">
+            <div className="card mt-1 p-2">
+              <Reservation />
+            </div>
+          </div>
+        </div>
+      </div>
+    );
   }
 }
 

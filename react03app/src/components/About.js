@@ -13,7 +13,7 @@ const About = () => (
     <div class="row mt-3">
       <div class="col">
         <div class="card bg-light p-1">
-          Empty card
+          <img src={'/img/JPolzin_4.jpg'} alt="me" width="250"/>
         </div>
       </div>
       <div class="col">

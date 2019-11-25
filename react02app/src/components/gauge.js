@@ -25,7 +25,7 @@ class Gauge extends React.Component {
         let pointer = { style: { fill: '#2e79bb' }, width: 5 };
         return (
             <div class="card mt-3">
-                <h5 class="card-header">Gauge with Slider</h5>
+                <h5 class="card-header bg-info text-white">Gauge with Slider</h5>
                 <div class="card-body">
                     <JqxGauge ref='myGauge'
                     value={0} animationDuration={1500} border={border} pointer={pointer}

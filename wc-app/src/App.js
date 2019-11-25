@@ -38,7 +38,7 @@ class App extends Component {
 			},
 
 			editing: {
-			enabled: true
+				enabled: true
 			},
 
 			dataSource: new window['Smart'].DataAdapter(  

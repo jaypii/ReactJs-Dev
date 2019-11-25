@@ -21,13 +21,13 @@ class App extends Component {
           <div class="col">
             <Clock />
             <div class="card mt-2">
-              <h5 class="card-header">Date Input</h5>
+              <h5 class="card-header bg-info text-white">Date Input</h5>
               <div class="card-body">
                 <JqxDateTimeInput />
               </div>
             </div>
             <div class="card mt-2">
-              <h5 class="card-header">Toggle Button</h5>
+              <h5 class="card-header bg-info text-white">Toggle Button</h5>
               <div class="card-body">
                 <Toggle />
               </div>
@@ -44,11 +44,17 @@ class App extends Component {
 class Header extends React.Component {
   render(){
     return(
-      <div class="jumbotron mt-2 bg-info text-white">
-        <h1 class="display-4">jQWidgets React App</h1>
+      <div class="card mt-2 bg-info text-white text-center p-2">
+        <h1 class="display-5">jQWidgets React App</h1>
       </div>
     );
   }
+};
+
+const today = new Date();
+
+function minutes_with_leading_zeros(dt) { 
+  return (dt.getMinutes() < 10 ? '0' : '') + dt.getMinutes();
 };
 
 class Footer extends React.Component {
@@ -63,8 +69,9 @@ class Footer extends React.Component {
             <div class="col">
               &nbsp;
             </div>
-            <div class="col text-right">
-              &nbsp;
+            <div className="col text-right">
+                {today.getDate() + '.' + (today.getMonth()+1) + '.' + today.getFullYear() 
+                + ' ' + today.getHours() + ':' + minutes_with_leading_zeros(today)}
             </div>
           </div>
         </div>

@@ -50,7 +50,7 @@ export default class Create extends Component {
  
   render() {
     return (
-        <div style={{ marginTop: 10 }}>
+        <div style={{ marginTop: 5 }}>
             <h3>Add New Business</h3>
             <form onSubmit={this.onSubmit}>
                 <div className="form-group">

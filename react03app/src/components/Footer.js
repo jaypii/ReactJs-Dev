@@ -5,6 +5,10 @@ import React from 'react'
 // between routes.
 const today = new Date();
 
+function minutes_with_leading_zeros(dt) { 
+    return (dt.getMinutes() < 10 ? '0' : '') + dt.getMinutes();
+};
+
 const Footer = () => (
     <div class="card mt-3 bg-info text-white">
         <div class="row p-2">
@@ -15,7 +19,7 @@ const Footer = () => (
             <div class="col text-right">
                 {/* Todays date */}
                 {today.getDate() + '.' + (today.getMonth()+1) + '.' + today.getFullYear() 
-                    + ' ' + today.getHours() + ':' + today.getMinutes()}
+                    + ' ' + today.getHours() + ':' + minutes_with_leading_zeros(today)}
             </div>
         </div>
     </div>

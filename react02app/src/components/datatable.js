@@ -25,7 +25,7 @@ class Datatable extends React.Component {
             [
                 '2.25', '1.5', '3.0', '3.3', '4.5', '3.6', '3.8', '2.5', '5.0', '1.75', '3.25', '4.0', '3.25'
             ];
-        for (let i = 0; i < 50; i++) {
+        for (let i = 0; i < 25; i++) {
             let row = {};
             let productindex = Math.floor(Math.random() * productNames.length);
             let price = parseFloat(priceValues[productindex]);
@@ -70,7 +70,7 @@ class Datatable extends React.Component {
 
         return (
             <div class="card mt-2">
-                <h5 class="card-header">Datatable Component</h5>
+                <h5 class="card-header bg-info text-white">Datatable Component</h5>
                 <div class="card-body">
                     <JqxDataTable
                         width={850} source={dataAdapter} columnsResize={true} sortable={true}
