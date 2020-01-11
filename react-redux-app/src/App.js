@@ -35,7 +35,6 @@ const store = createStore(
 );
 
 store.dispatch({ type: "INCREMENT" });
-store.dispatch({ type: "INCREMENT" });
 store.dispatch({ type: "DECREMENT" });
 store.dispatch({ type: "RESET" });
 
