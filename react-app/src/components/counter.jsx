@@ -20,21 +20,21 @@ class  Counter extends Component {
          <div className="card mt-2 p-2">
             <h6>Counter {this.props.counter.id}</h6>
             <div className="row mt-2">
-               <div className="col-md-1">
+               <div className="col">
                   <span  className={this.getBadgeClasses()}>
                      {this.formatCount()}
                   </span>
                </div>
-               <div className="col-md-1">
+               {/* Button row */}
+               <div className="col">
                   <button onClick={this.handleIncrement}  className="btn btn-secondary btn-sm">&nbsp;+&nbsp;</button>
                </div>
-               <div className="col-md-1">
+               <div className="col">
                   <button onClick={this.handleDecrement}  className="btn btn-secondary btn-sm">&nbsp;-&nbsp;</button>
                </div>
-               <div className="col-md-1">
+               <div className="col">
                   <button onClick={() => this.props.onDelete(this.props.counter.id)} className="btn btn-danger btn-sm">Del</button>
                </div>
-               <div className="col-md-8">&nbsp;</div>
             </div>
          </div> 
       ); 

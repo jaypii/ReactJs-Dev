@@ -19,8 +19,9 @@ class  Counters extends Component {
   
    render() {
       return (
-       <> 
+       <div className="row row-cols-2"> 
         {this.state.counters.map(counter => (
+         <div className="col">
          <Counter 
             key={counter.id}
             onDelete={this.handleDelete}
@@ -28,8 +29,9 @@ class  Counters extends Component {
             //value={counter.value}
             //id={counter.id}
          />
+         </div>
         ))}
-      </>
+      </div>
       );
    }
 } 
