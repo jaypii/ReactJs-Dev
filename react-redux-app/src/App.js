@@ -22,7 +22,7 @@ function reducer(state = initialState, action) {
       };
     case 'RESET':
       return {
-        count: 0
+        count: state.count = 0
       };
     default:
       return state;

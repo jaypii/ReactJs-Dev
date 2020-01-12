@@ -20,27 +20,24 @@ function App() {
 
   const renderProduct = product => {
     return (
-      <li key={product._id}>
-        <h3>{product.name}</h3>
-        <p>{product.description}</p>
-      </li>
+      <div className="uk-padding-small uk-card uk-card-default uk-card-body" key={product._id}>
+        <h4>{product.name}</h4>
+        {product.description}
+      </div>
     );
   };
 
   return (
-    <div>
-      <h3>Product List</h3>
-      <div className="uk-card uk-card-small uk-card-default">
-          <div className="uk-card-body">
-            <ul className="uk-list uk-list-divider">
-            {(products && products.length > 0) ? (
-              products.map(product => renderProduct(product))
-            ) : (
-              <p>No products found</p>
-            )}
-          </ul>
-          </div>
-        </div>
+    <div className="uk-container">
+      <h2>Product List</h2>
+      <hr/>
+      <div className="uk-child-width-1-3@m uk-grid-small uk-grid-match uk-grid">
+        {(products && products.length > 0) ? (
+          products.map(product => renderProduct(product))
+        ) : (
+          <p>No products found</p>
+        )}
+      </div>
     </div>
     );
 }

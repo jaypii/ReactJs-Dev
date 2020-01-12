@@ -27,7 +27,7 @@ class App extends Component {
       // Your JSX code goes here.
       <div className="container">
         <h2>Using simple components</h2>
-        <div className="row">
+        <div className="row row-cols-2">
           <div className="col">
             <div className="card mt-1 p-2">
               <EssayForm />
@@ -44,7 +44,7 @@ class App extends Component {
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row row-cols-2">
           <div className="col">
             <div className="card mt-1 p-2">
               <Calculator />

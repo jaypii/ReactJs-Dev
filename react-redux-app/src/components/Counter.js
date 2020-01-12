@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { increment, decrement } from './actions';
+import { increment, decrement, reset } from './actions';
 
 class Counter extends React.Component {
   state = { count: 0 }
@@ -13,14 +13,19 @@ class Counter extends React.Component {
     this.props.decrement();
   }
 
+  reset = () => {
+    this.props.reset();
+  }
+
   render() {
     return (
       <div className="card p-2 m-auto w-50">
         <h2>Counter</h2>
         <div>
-          <button className="btn btn-success" onClick={this.decrement}>-</button>
+          <button className="btn btn-info" onClick={this.decrement}>-</button>
           <span className="lead ml-5 mr-5">{this.props.count}</span>
-          <button className="btn btn-success" onClick={this.increment}>+</button>
+          <button className="btn btn-info" onClick={this.increment}>+</button>&nbsp;&nbsp;
+          <button className="btn btn-warning" onClick={this.reset}>Reset</button>
         </div>
       </div>
     )
@@ -38,7 +43,8 @@ function mapStateToProps(state) {
 // They get bound to `dispatch`.
 const mapDispatchToProps = {
   increment,
-  decrement
+  decrement,
+  reset
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Counter);
