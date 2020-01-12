@@ -10,7 +10,7 @@ class Home extends Component {
         <div className="jumbotron text-center mb-2">
             <h3 className="display-5">Welcome to my site!</h3>
             <p className="lead" >
-                This site uses React, React routing and Bootstrap 4<br/>
+                This site uses React, React routing and Bootstrap 4.4<br/>
                 and is a single page application.
             </p>
         </div>

@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 
 import Button from './components/Button';
+import Contacts from './components/Contacts';
 
 class App extends Component {
 
@@ -40,11 +41,23 @@ class App extends Component {
             <Button />
           </div>
         </div>
-        <div className="card mt-3">
-          <div className="card-body">
-            <img src = {imageURL} width="400" alt="Dog"/>
+        <div className="row">
+          <div className="col-md-7">
+            <div className="card mt-3">
+              <div className="card-body">
+                <img src = {imageURL} width="400" alt="Dog"/>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-5">
+            <div className="card mt-3">
+              <div className="card-body">
+                Contacts
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
     );
   }
