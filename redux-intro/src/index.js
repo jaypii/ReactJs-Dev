@@ -44,6 +44,7 @@ const App = () => (
          <Row>
          <Col>
             <Card className="p-2">
+            <h5>Standard component</h5>
                <Clock />
             </Card>
          </Col>

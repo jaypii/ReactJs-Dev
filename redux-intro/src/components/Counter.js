@@ -21,6 +21,7 @@ class Counter extends React.Component {
     return (
       <Card className="text-center">
         <h3 >Counter</h3>
+        <h4>Component using Redux</h4>
         <Card.Body>
           <button className="btn btn-success" onClick={this.decrement}>-</button>&nbsp;&nbsp;
           &nbsp;&nbsp;<span>{this.props.count}</span>&nbsp;&nbsp;&nbsp;&nbsp;
