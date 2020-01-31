@@ -16,7 +16,6 @@ class Counter extends React.Component {
       this.props.dispatch({ type: 'RESET'})
    }
 
-
    render() {
     return (
       <Card className="text-center">

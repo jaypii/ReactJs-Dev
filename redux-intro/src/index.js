@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import { Route, Router} from 'react-router';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {Container, Row, Col, Card} from 'react-bootstrap';
@@ -17,6 +17,8 @@ const initialState = {
 
 // reducer.js
 function reducer(state = initialState, action) {
+   console.log('reducer', state, action);
+
    switch(action.type) {
       case 'INCREMENT':
          return {
@@ -35,26 +37,31 @@ function reducer(state = initialState, action) {
    }
 }
 
-const store = createStore(reducer);
+const store = createStore(
+   reducer,
+   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 const App = () => (
    <Provider store={store}>
-      <Header />
-      <Container>
-         <Row>
-         <Col>
-            <Card className="p-2">
-            <h5>Standard component</h5>
-               <Clock />
-            </Card>
-         </Col>
-         <Col>
-            <Counter />
-         </Col>
-         <Col>Last column</Col>
-      </Row>
-      </Container>
-      <Footer />
+      <Router>
+         <Header />
+         <Container className="mt-3">
+            <Row>
+            <Col>
+               <Card className="p-2">
+               <h4>Standard component</h4>
+                  <Clock />
+               </Card>
+            </Col>
+            <Col>
+               <Counter />
+            </Col>
+            <Col>Last column</Col>
+         </Row>
+         </Container>
+         <Footer />
+      </Router>
    </Provider>
 );
 
