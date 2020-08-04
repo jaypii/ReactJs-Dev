@@ -23,7 +23,7 @@ class EssayForm extends Component {
    render() {
      return (
        <form onSubmit={this.handleSubmit}>
-         <div class="form-group">
+         <div className="form-group">
          <label>
            Essay:&nbsp;
            <textarea value={this.state.value} className="form-control" onChange={this.handleChange} />
