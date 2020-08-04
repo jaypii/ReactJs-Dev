@@ -24,7 +24,7 @@ class App extends Component {
 
   showUsers = user => (
     <tr key={user.id}>
-      <td><img src={user.imgUrl} className="rounded-circle" style={{width: 30}}/></td>
+      <td><img src={user.imgUrl} className="rounded-circle" style={{width: 50}}/></td>
       <td>{user.username}</td>
       <td>{user.email}</td>
       <td>{user.post}</td>
@@ -37,7 +37,7 @@ class App extends Component {
       <div className="App">
         <div className="card mt-2 ">
           <div className="card-body">
-            <table className="table table-striped"  style={{width: 60 + '%'}}>
+            <table className="table table-striped"  style={{width: 100 + '%'}}>
               <tbody>
                 {users.map(this.showUsers)}
               </tbody>

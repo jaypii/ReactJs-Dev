@@ -23,7 +23,7 @@ const connection = mysql.createConnection({
   host: 'localhost',
   user:'root',
   password:'mysql$adm',//password of your mysql db
-  database:'simple_React_db'
+  database:'simple_react_db'
 });
 
 connection.connect(function(err){
