@@ -11,7 +11,7 @@ const Footer = () => {
     return(
         <div className="uk-grid-divider uk-child-width-expand@s uk-grid uk-margin-top uk-background-muted uk-padding-small">
             <div>
-                &copy; 2019, J. Polzin
+                &copy; 2020, J. Polzin
             </div>
             <div className="uk-text-center">
                 &nbsp;

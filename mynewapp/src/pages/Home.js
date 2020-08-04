@@ -10,7 +10,7 @@ class Home extends Component {
             <div className="uk-card uk-height-medium uk-card-secondary uk-card-body uk-width-1-1@m uk-margin-small uk-text-center">
                 <h2 className="uk-heading-medium">Welcome to my site!</h2>
                 <p className="uk-lead" >
-                    This site uses React, React routing and UIKit 3<br/>
+                    This site uses React, React routing and UIKit 3.5.5<br/>
                     and is a single page application.
                 </p>
             </div>
