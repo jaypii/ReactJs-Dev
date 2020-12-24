@@ -4,10 +4,10 @@
   "private": true,
   "dependencies": {
     "axios": "^0.19.2",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.20",
     "lodash.isequal": "^4.5.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-scripts": "3.2.0"
   },
   "scripts": {
