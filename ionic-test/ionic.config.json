@@ -1,7 +1,0 @@
-{
-  "name": "ionic-test",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react"
-}
