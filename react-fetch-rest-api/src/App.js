@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import NameForm from './components/NameForm';
 import EssayForm from './components/EssayForm';
 import FlavorForm from './components/FlavorForm';
@@ -56,7 +57,6 @@ class App extends Component {
             </div>
           </div>
         </div>
-        {/*}
         <div className="row">
           <div className="col">
             <br/>
@@ -82,17 +82,8 @@ class App extends Component {
             ))}
           </div>
         </div>
-        */}
-        <div className="row">
-
-          <div className="col">
-            <div className="card mt-1 p-2">
-              <Reservation />
-            </div>
-          </div>
-        </div>
       </div>
-    );
+    )
   }
 }
 
