@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import NameForm from './components/NameForm';
 import EssayForm from './components/EssayForm';
 import FlavorForm from './components/FlavorForm';
-import Reservation from './components/Reservation';
 import Calculator from './components/Calculator';
 import SignUpDialog from './components/SignUpDialog';
 
