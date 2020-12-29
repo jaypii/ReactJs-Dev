@@ -10,7 +10,7 @@ class App extends Component {
   render() {
     return (
       // Your JSX code goes here.
-      <div className="container">
+      <div className="container mt-3">
         <h2>Using simple components</h2>
         <div className="row row-cols-2">
           <div className="col">
