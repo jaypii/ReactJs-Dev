@@ -3,13 +3,12 @@ import AgSlider from './components/AgSlider';
 import OlfSlider from './components/OlfSlider';
 import ImpSlider from './components/ImpSlider';
 import MyCircle from './components/MyCircle';
-//import BarGauge from './components/BarGauge';
 
 class App extends React.PureComponent<{}> {
     public render() {
         return (
             <div>
-                <h3>Engine Panel</h3>
+                <h3>Engine Panel with jqWidgets</h3>
                 <div className="row mt-2">
                     <div className="col-md-2">
                         <h5 className="text-center">Antigrav Engines</h5>

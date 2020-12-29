@@ -16,7 +16,6 @@ const Home = () => {
             <div className="col">
                <Counter />
             </div>
-            <div className="col"></div>
          </div>
       </div>
   );

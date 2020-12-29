@@ -5,6 +5,7 @@ const Counter = () => {
 
    return (
       <div className="card p-2">
+         <h5>Counter Component using Hook (useState)</h5>
          <h2 className="text-center">{count}</h2>
          <hr/>
          <p className="d-flex justify-content-start">
