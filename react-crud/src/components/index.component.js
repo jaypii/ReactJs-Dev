@@ -9,7 +9,7 @@ export default class Index extends Component {
       this.state = {business: []};
     }
     componentDidMount(){
-      axios.get('http://localhost:4000/business')
+      axios.get('http://localhost:3010/business')
         .then(response => {
           this.setState({ business: response.data });
         })
