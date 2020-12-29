@@ -7,21 +7,6 @@ import Calculator from './components/Calculator';
 import SignUpDialog from './components/SignUpDialog';
 
 class App extends Component {
-
-  state = {
-    todos: []
-  }
-
-  componentDidMount() {
-    fetch('http://jsonplaceholder.typicode.com/todos')
-    .then(res => res.json())
-    .then((data) => {
-      this.setState({ todos: data })
-      console.log(this.state.todos)
-    })
-    .catch(console.log)
-  }
-
   render() {
     return (
       // Your JSX code goes here.
@@ -54,31 +39,6 @@ class App extends Component {
             <div className="card mt-1 p-2">
               <SignUpDialog />
             </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col">
-            <br/>
-            <h1>My Todos</h1>
-            {this.state.todos.map((todo) => (
-            <div className="card mt-1 bg-light">
-              <div className="card-body">
-                <h5 className="card-title">{todo.title}</h5>
-                <h6 className="card-subtitle mb-2 text-muted">
-                  { todo.completed &&
-                  <span>
-                    Completed
-                  </span>
-                  }
-                  { !todo.completed &&
-                    <span>
-                      Pending
-                    </span>
-                  }              
-                </h6>
-              </div>
-            </div>
-            ))}
           </div>
         </div>
       </div>

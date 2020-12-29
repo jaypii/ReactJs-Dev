@@ -53,6 +53,7 @@ class TemperatureInput extends Component {
  
      return (
        <div>
+         <h3>Temperature Calculator</h3>
          <TemperatureInput
            scale="c"
            temperature={celsius}
