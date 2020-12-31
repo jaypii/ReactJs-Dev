@@ -7,7 +7,7 @@ class TopNav extends Component {
             <nav className="uk-navbar uk-navbar-container uk-sticky">
                 <div className="uk-navbar-left">
                     <a className="uk-navbar-item uk-logo" href="/">
-                        Logo
+                        <img src="logo192.png" width="50px" alt="logo"/>
                     </a>
                     <ul className="uk-navbar-nav">
                         <li><NavLink className="nav-item nav-link" to="/">Home</NavLink></li>
