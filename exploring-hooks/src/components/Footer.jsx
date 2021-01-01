@@ -10,7 +10,7 @@ const Footer = () => {
    return (
       <div className="row mt-3 p-2 bg-light">
          <div className="col">
-            &copy; 2019, J. Polzin
+            &copy; 2021, J. Polzin
          </div>
          <div className="col text-center">
             &nbsp;
