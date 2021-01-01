@@ -26,8 +26,8 @@ export default function DataLoader(props) {
                   <hr/>
                </li>
             ))}
-         </ul>
+            </ul>
          </div>
       </div>
    );
- }
+}

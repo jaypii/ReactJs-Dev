@@ -33,9 +33,11 @@ const EffectHook = () => {
    return (
       <div className="card p-2">
          <h5>Effect Hook component</h5>
-         <div className="card-body" style={{ border: '1px solid darkgrey', height: 200, overflow: 'auto'}}>
-            {posts.map(post => <div key={post.id}>{post.title}</div>)}
-         </div>
+         <ul className="list-group">
+            <li className="list-group-item">
+               {posts.map(post => <p id={post.id}>{post.id}: {post.title}</p>)}
+            </li>
+         </ul>
       </div>
    );
 }
