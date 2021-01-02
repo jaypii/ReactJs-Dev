@@ -1,9 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { createStore } from 'redux';
-import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 
 import {Container, Row, Col, Card} from 'react-bootstrap';
 import Counter from './components/Counter';
@@ -48,17 +49,17 @@ const App = () => (
          <Header />
          <Container className="mt-3">
             <Row>
-            <Col>
-               <Card className="p-2">
-               <h4>Standard component</h4>
-                  <Clock />
-               </Card>
-            </Col>
-            <Col>
-               <Counter />
-            </Col>
-            <Col>Last column</Col>
-         </Row>
+               <Col>
+                  <Card className="p-2">
+                     <h4>Standard component</h4>
+                     <Clock />
+                  </Card>
+               </Col>
+               <Col>
+                  <Counter />
+               </Col>
+               <Col>Last column</Col>
+            </Row>
          </Container>
          <Footer />
       </Router>
