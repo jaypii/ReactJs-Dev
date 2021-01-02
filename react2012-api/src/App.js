@@ -19,7 +19,9 @@ class App extends Component {
 
   render () {
     return (
-      <Contacts contacts={this.state.contacts} />
+      <div className="container-fluid">
+        <Contacts contacts={this.state.contacts} />
+      </div>
     );
   }
 }
