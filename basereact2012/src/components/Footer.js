@@ -10,8 +10,8 @@ function minutes_with_leading_zeros(dt) {
 };
 
 const Footer = () => (
-    <div className="card mt-3 bg-light text-dark">
-        <div className="row p-2">
+    <div>
+        <div className="row bg-light p-2 mt-3">
             <div className="col">
                 &copy; {today.getFullYear()}, J. Polzin
             </div>

@@ -4,9 +4,9 @@ class Header extends React.Component {
    render() {
       return (
          <div>
-            <div className="row">
+            <div className="row bg-light mt-2 p-2">
                <div className="col-1">
-                  <img src="/logo192.png" height="80px" alt="Logo"></img>
+                  <img src="/logo192.png" height="50px" alt="Logo"></img>
                </div>
                <div className="col-9">
                   <h1>Learning or repeating React basics</h1>
