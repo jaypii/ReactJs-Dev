@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-//import Contacts from './components/contacts';
 import axios from 'axios';
 
 import Button from './components/Button';
@@ -37,27 +36,19 @@ class App extends Component {
         <div className="card p-2 mt-2 bg-light">
           <h1 className="display-3">Hello, Dog!</h1>
           <div className="card-body">
-            <p className="lead">This is a REST Service, a simple component for randomly show dog images.</p>
+            <p className="lead">This is an example of consuming a REST Service<br/>a simple component for randomly show dog images.</p>
             <Button />
           </div>
         </div>
         <div className="row">
-          <div className="col-md-7">
+          <div className="col">
             <div className="card mt-3">
               <div className="card-body">
                 <img src = {imageURL} width="400" alt="Dog"/>
               </div>
             </div>
           </div>
-          <div className="col-md-5">
-            <div className="card mt-3">
-              <div className="card-body">
-                Contacts
-              </div>
-            </div>
-          </div>
         </div>
-
       </div>
     );
   }
