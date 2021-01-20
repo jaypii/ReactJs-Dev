@@ -1,7 +1,16 @@
 import React from 'react';
 // ***** Simple Clock component *****
 
+const toptions ={
+    timeZone: "Europe/Zurich",
+    hour12: false,
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit"
+}
+
 class Clock extends React.Component {
+    
     constructor(props) {
         super(props);
         this.state = {date: new Date()};
@@ -25,7 +34,7 @@ class Clock extends React.Component {
     render() {
         return (
             <div>
-                <h3>{this.state.date.toLocaleTimeString()}</h3>
+                <h3>{this.state.date.toLocaleTimeString("CH",toptions)}</h3>
             </div>
         );
     }
