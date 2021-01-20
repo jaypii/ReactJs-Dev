@@ -5,11 +5,11 @@ const Contacts = ({ contacts }) => {
       <div>
          <h1>Contact List</h1>
          {contacts.map((contact) => (
-            <div class="card mt-2 w-50">
-               <div class="card-body">
-                  <h5 class="card-title">{contact.name}</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">{contact.email}</h6>
-                  <p class="card-text">{contact.company.catchPhrase}</p>
+            <div class="card mt-2 w-75 p-1">
+               <div class="d-flex justify-content-between">
+                  <p><strong>{contact.name}</strong></p>
+                  <p class="text-muted">{contact.email}</p>
+                  <p><i>{contact.company.catchPhrase}</i></p>
                </div>
             </div>
          ))}

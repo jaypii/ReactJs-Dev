@@ -7,7 +7,9 @@ class MyCircle extends React.PureComponent {
 
     render() {
         return (
-            <Stage width={450} height={450}>
+            <div>
+                <h4>Linear Space Screen</h4>
+                <Stage width={600} height={600}>
             <Layer>
                 <Line
                     points={[60,200,900,200]}
@@ -43,6 +45,7 @@ class MyCircle extends React.PureComponent {
                 />
             </Layer>
             </Stage>
+            </div>
         );
     }
 }

@@ -17,18 +17,18 @@ class Counter extends React.Component {
    }
 
    render() {
-    return (
-      <Card className="text-center">
-        <h3 >Counter</h3>
-        <h4>Component using Redux</h4>
-        <Card.Body>
-          <button className="btn btn-success" onClick={this.decrement}>-</button>&nbsp;&nbsp;
-          &nbsp;&nbsp;<span>{this.props.count}</span>&nbsp;&nbsp;&nbsp;&nbsp;
-          <button className="btn btn-success" onClick={this.increment}>+</button>&nbsp;&nbsp;
-          <button className="btn btn-warning" onClick={this.reset}>R</button>
-          </Card.Body>
-      </Card>
-    )
+      return (
+         <Card className="text-center">
+            <h4>Counter</h4>
+            <h5>Component using Redux</h5>
+            <Card.Body>
+               <button className="btn btn-primary" onClick={this.decrement}>-</button>&nbsp;&nbsp;
+                  &nbsp;&nbsp;<span>{this.props.count}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+               <button className="btn btn-success" onClick={this.increment}>+</button>&nbsp;&nbsp;
+               <button className="btn btn-warning" onClick={this.reset}>R</button>
+            </Card.Body>
+         </Card>
+      )
    }
 }
 

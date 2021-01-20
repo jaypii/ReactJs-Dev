@@ -50,7 +50,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "name": "jqW2101",
+  "name": "jqw2101",
   "private": true,
   "scripts": {
     "build": "react-scripts build",

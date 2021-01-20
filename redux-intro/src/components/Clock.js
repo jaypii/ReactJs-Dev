@@ -1,5 +1,13 @@
 import React, { Component } from "react";
 
+const toptions ={
+    timeZone: "Europe/Zurich",
+    hour12: false,
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit"
+}
+
 class Clock extends Component {
     constructor(props) {
         super(props);
@@ -25,8 +33,8 @@ class Clock extends Component {
 
     render() {
       return (
-        <div className="border border-warning p-1 w-50">
-          <h4>{this.state.date.toLocaleTimeString()}</h4>
+        <div className="border border-warning p-1">
+          <h3>{this.state.date.toLocaleTimeString("CH",toptions)}</h3>
         </div>
       );
     }

@@ -32,7 +32,7 @@ function App() {
       <h2>Product List</h2>
       <h4>Using Mongo DB, Express server, ui kit, react</h4>
       <hr/>
-      <div className="uk-child-width-expand@s uk-grid-medium uk-grid">
+      <div className="uk-grid-row-large uk-child-width-1-3@s uk-grid-large uk-grid">
         {(products && products.length > 0) ? (
           products.map(product => renderProduct(product))
         ) : (

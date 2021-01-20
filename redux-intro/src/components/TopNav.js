@@ -9,7 +9,7 @@ class TopNav extends React.Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="mr-auto">
-                     <Nav.Link href="#link">Link</Nav.Link>
+                     <Nav.Link href="#link" disabled>Link</Nav.Link>
                   </Nav>
                </Navbar.Collapse>
          </Navbar>

@@ -10,8 +10,8 @@ class App extends React.PureComponent<{}, IGridProps> {
         localdata:
             [
                 ['Maria Anders', 'Sales Representative', 'Berlin', 'Germany'],
-                ['Ana Trujillo', 'Owner', 'Mxico D.F.', 'Mexico'],
-                ['Antonio Moreno', 'Owner', 'Mxico D.F.', 'Mexico'],
+                ['Ana Trujillo', 'Owner', 'Mexico D.F.', 'Mexico'],
+                ['Antonio Moreno', 'Owner', 'Mexico D.F.', 'Mexico'],
                 ['Thomas Hardy', 'Sales Representative', 'London', 'UK'],
                 ['Christina Berglund', 'Order Administrator', 'Lule', 'Sweden'],
                 ['Hanna Moos', 'Sales Representative', 'Mannheim', 'Germany'],

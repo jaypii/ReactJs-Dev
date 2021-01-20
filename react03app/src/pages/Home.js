@@ -1,9 +1,10 @@
 import React from 'react';
 
-import Clock from './clock';
+import Clock from '../components/clock';
 
 const Home = () => (
   <div>
+    {/* Application info */}
     <div className="jumbotron bg-info text-white text-center">
       <h1 className="display-5">Welcome to my first React Website!</h1>
       <p className="lead">React with Routing</p>

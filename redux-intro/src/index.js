@@ -7,6 +7,7 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
 import {Container, Row, Col, Card} from 'react-bootstrap';
+
 import Counter from './components/Counter';
 import Clock from './components/Clock';
 import Header from './components/Header';
