@@ -8,9 +8,6 @@ function ChildComponent(props) {
             <h5>ChildComponent: as Functional component</h5>
             <button className="btn-primary btn-sm" onClick={() =>props.greetHandler('Child component')}>Greet Parent</button> 
          </div>
-         <div className="col text-end">
-            <Clock />
-         </div>
       </div>
    )
 }
