@@ -52,8 +52,8 @@ class Chart extends React.PureComponent<{}, IChartProps> {
                    offset: { x: 0, y: -25 },
                    rotationPoint: 'topright'
                },
-               maxValue: '01-01-2015',
-               minValue: '01-01-2014',
+               maxValue: '01-03-2021',
+               minValue: '01-01-2020',
                tickMarks: {
                    color: '#BCBCBC',
                    interval: 1,

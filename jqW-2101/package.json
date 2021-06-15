@@ -38,12 +38,12 @@
     "@types/react": "16.8.20",
     "@types/react-dom": "16.8.4",
     "@types/react-router-dom": "^5.1.7",
-    "jqwidgets-scripts": "^8.1.4",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "jqwidgets-scripts": "^8.3.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.0.1",
-    "typescript": "3.5.2"
+    "react-scripts": "^4.0.3",
+    "typescript": "^3.9.9"
   },
   "deprecated": false,
   "description": "Please refer to its documentation:   - [Getting Started](https://github.com/jqwidgets/jqW-2101/blob/master/README.md#getting-started)    - [jQWidgets React TSX Documentation](http://www.jqwidgets.com/reactjs-components-documentation/)",
