@@ -1,6 +1,7 @@
 import React from 'react';
 import Clock from "./clock";
 import TestFComponent from "./fTestComponent";
+import Toggle from './toggle';
 
 class Content extends React.Component {
    render() {
@@ -15,7 +16,9 @@ class Content extends React.Component {
                <div className="col-8 text-center">
                   <TestFComponent />
                </div>
-               <div className="col-2 text-end">col 3</div>
+               <div className="col-2 text-end">
+                  <Toggle />
+               </div>
             </div>
          </div>
       );

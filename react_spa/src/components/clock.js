@@ -26,7 +26,7 @@ class Clock extends Component {
     render() {
       return (
         <div className="border border-warning p-1 w-50">
-          <h4>{this.state.date.toLocaleTimeString()}</h4>
+          <h4>{this.state.date.toLocaleTimeString('de-CH', {hour12: false})}</h4>
         </div>
       );
     }

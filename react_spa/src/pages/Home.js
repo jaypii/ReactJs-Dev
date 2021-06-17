@@ -7,10 +7,10 @@ class Home extends Component {
   render() {
     return (
     <div>
-        <div className="jumbotron text-center mb-2">
+        <div className="card bg-light p-2 text-center mb-2 mt-3">
             <h3 className="display-5">Welcome to my site!</h3>
             <p className="lead" >
-                This site uses React, React routing and Bootstrap 4.5.3<br/>
+                This site uses React, React routing and Bootstrap 5.0.1<br/>
                 and is a single page application.
             </p>
         </div>

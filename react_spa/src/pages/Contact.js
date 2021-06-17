@@ -7,14 +7,9 @@ class Contact extends Component {
       <div>
         <h3>Contact</h3>
         <hr />
-        <div className="alert alert-info" role="alert">
-          <p>The easiest thing to do is post on
-            our <a rel="noopener noreferrer" href="http://forum.kirupa.com" target="_blank">forums</a>.
-          </p>
-        </div>
         <div className="row mt-2">
           <div className="col-md-3">
-            <div className="card">
+            <div className="card bg-light p-2">
               <div className="card-body">
               <NameForm />
               </div>

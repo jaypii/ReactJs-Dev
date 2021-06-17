@@ -1,8 +1,5 @@
 import React from 'react'
-//import Time from 'react-time-format'
 
-// The Header creates links that can be used to navigate
-// between routes.
 const today = new Date();
 
 function minutes_with_leading_zeros(dt) { 

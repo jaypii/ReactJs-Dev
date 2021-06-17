@@ -10,7 +10,7 @@ export default function Button() {
    
    return (
       <div>
-         <button className="btn btn-primary" onClick={handleClick}>
+         <button className="btn btn-sm btn-primary" onClick={handleClick}>
             {buttonText}
          </button>
       </div>

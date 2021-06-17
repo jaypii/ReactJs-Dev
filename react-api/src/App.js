@@ -36,7 +36,7 @@ class App extends Component {
         <div className="card p-2 mt-2 bg-light">
           <h1 className="display-3">Hello, Dog!</h1>
           <div className="card-body">
-            <p className="lead">This is an example of consuming a REST Service<br/>a simple component for randomly show dog images.</p>
+            <p className="lead">This is an example of consuming a REST Service a simple component for randomly show dog images.</p>
             <Button />
           </div>
         </div>
@@ -44,7 +44,7 @@ class App extends Component {
           <div className="col">
             <div className="card mt-3">
               <div className="card-body">
-                <img src = {imageURL} width="400" alt="Dog"/>
+                <img src = {imageURL} width="500" alt="Dog"/>
               </div>
             </div>
           </div>

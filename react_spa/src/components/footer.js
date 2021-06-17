@@ -12,7 +12,7 @@ class Footer extends Component {
         return(
             <div className="row mt-3 bg-light p-2">
                 <div className="col">
-                    &copy; 2019, J. Polzin
+                    &copy; 2021, J. Polzin
                 </div>
                 <div className="col text-center">
                     &nbsp;

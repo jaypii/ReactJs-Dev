@@ -21,7 +21,10 @@ class ParentComponent extends Component {
          <div>
             <div className="card mt-2 p-2 bg-light">
                <h2>Parent Component: as Class component</h2>
-               <ChildComponent greetHandler={this.greetParent}/>
+               <hr />
+               <div class="card-body">
+                  <ChildComponent greetHandler={this.greetParent}/>
+               </div>
             </div>  
          </div>
       )
