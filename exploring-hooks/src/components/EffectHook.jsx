@@ -32,7 +32,7 @@ const EffectHook = () => {
 
    return (
       <div className="card p-2">
-         <h5>Effect Hook component</h5>
+         <h5 className="bg-light">Effect Hook component</h5>
          <ul className="list-group">
             <li className="list-group-item">
                {posts.map(post => <p id={post.id}>{post.id}: {post.title}</p>)}

@@ -10,12 +10,12 @@ const Footer = () => {
    return (
       <div className="row mt-3 p-2 bg-light">
          <div className="col">
-            &copy; 2021, J. Polzin
+            &copy; 2022, J. Polzin
          </div>
          <div className="col text-center">
             &nbsp;
          </div>
-         <div className="col text-right">
+         <div className="col text-end">
             {today.getDate() + '.' + (today.getMonth()+1) + '.' + today.getFullYear() 
             + ' ' + today.getHours() + ':' + minutes_with_leading_zeros(today)}
          </div>
