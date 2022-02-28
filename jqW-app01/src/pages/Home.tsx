@@ -5,8 +5,8 @@ import Counter from '../components/Counter'
 const Home = () => {
    return (
       <div>
-         <div className="jumbotron">
-            <h1 className="display-4">React UI Components</h1>
+         <div className="card p-2 bg-light">
+            <h1 className="display-5">React UI Components</h1>
             <p className="lead">This is an app using routing and jqWidgets.</p>
          </div>
          <div className="row mt-2">
