@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../components/Button';
 import Footer from '../components/Footer';
+import FriendStatus from '../components/FriendStatus';
 
 
 const Home = () => {
