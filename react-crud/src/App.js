@@ -27,6 +27,7 @@ class App extends Component {
             </div>
           </nav> <br/>
           <h2>Welcome to React CRUD Tutorial</h2> <br/>
+          <p className="text-danger">!!! Needs MongoDB server started and node Server started !!!</p>
           <Switch>
               <Route exact path='/create' component={ Create } />
               <Route path='/edit/:id' component={ Edit } />
